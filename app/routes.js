@@ -50,6 +50,7 @@ var apiKey="1a2pNH4Ed5Yt15zsqR28Q2MUXJt4gG7B";
 	  // Insert route for handling favourites
 		var newObj = {};
 		newObj = request.body;
+		console.log(newObj);
 		sessionFavourite.push(newObj);
 	});
 

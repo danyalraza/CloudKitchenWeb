@@ -1,13 +1,43 @@
 body { padding-top:30px; }
 
 .favourite {
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-style: solid;
   border-color: inherit;
+  width: 300px;
+  height: 300px;
+}
+
+.no-border {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.reciperow {
+  border-bottom: 1px;
+  border-top: 1px;
+  border-color: gray;
+  border-style: solid;
+}
+
+.removefavourite {
+  margin: 10px;
+  float: left;
 }
 
 .search {
   margin-bottom: 50px;
   margin-top: 50px;
   width: 200px;
+}
+
+.recipelist {
+  border-top-style: solid;
+  border-top-style: solid;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-width: thin;
+  border-color: gray;
+
 }

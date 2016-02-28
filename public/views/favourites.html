@@ -1,17 +1,12 @@
-<div class="jumbotron text-center">
-	<h1>Nerds and Proud</h1>
-</div>
-<div ng-repeat="recipe in recipes" ng-if="$index % 3 == 0" class="row">
+<div class="container-fluid">
+<div class="row reciperow" ng-repeat="recipe in recipes">
     <div class="col-xs-4 favourite" ng-style="{'background-image':'url({{ recipe.HeroPhotoUrl }})', 'background-repeat':'no-repeat', 'background-size':'cover', 'background-position':'50% 50%'}">
-    	<h1>{{ recipes[$index].Title }}</h1>
-			<button ng-click="deleteItem(recipes[$index].RecipeID)"></button>
     </div>
-    <div class="col-xs-4 favourite" ng-style="{'background-image':'url({{ recipes[$index + 1].HeroPhotoUrl }})', 'background-repeat':'no-repeat', 'background-size':'cover', 'background-position':'50% 50%'}">
-			<h1>{{ recipes[$index + 1].Title }}</h1>
-			<button ng-click="deleteItem($recipes[$index + 1].RecipeID)"></button>
-    </div>
-    <div class="col-xs-4 favourite" ng-style="{'background-image':'url({{ recipes[$index + 2].HeroPhotoUrl }})', 'background-repeat':'no-repeat', 'background-size':'cover', 'background-position':'50% 50%'}">
-			<h1>{{ recipes[$index + 2].Title }}</h1>
-			<button ng-click="deleteItem($recipes[$index + 2].RecipeID)"></button>
-    </div>
+		<button type="button" ng-click="deleteItem(recipes[$index].RecipeID)" class="btn btn-danger removefavourite">Remove</button>
+		<div class="col-xs-8">
+		<h1 class="no-border"> {{ recipe.Title }} </h1>
+		<h2 class="no-border subcategory"> {{ recipe.Subcategory }} </h2>
+		<h2 class="no-border subcategory"> {{ recipe.Cuisine }} </h2>
+		</div>
+</div>
 </div>
