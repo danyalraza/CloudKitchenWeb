@@ -1,1 +1,1 @@
-angular.module('sampleApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'NerdCtrl', 'NerdService', 'GeekCtrl', 'GeekService']);
+angular.module('cloudKitchen', ['ngRoute', 'appRoutes', 'MainCtrl', 'FavouritesCtrl', 'FavouritesService', 'SearchCtrl', 'SearchService']);

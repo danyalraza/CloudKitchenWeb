@@ -53,6 +53,11 @@ var apiKey="1a2pNH4Ed5Yt15zsqR28Q2MUXJt4gG7B";
 		sessionFavourite.push(newObj);
 	});
 
+	app.destroy('/api/favourites', function(request, response) {
+		var destroyFavourite = new Firebase("https://fiery-heat-3854.firebaseio.com/Favourites/.json?orderBy=%22RecipeID%22&equalTo=" + request.body")
+
+	})
+
 	// frontend routes =========================================================
 	// route to handle all angular requests
 	app.get('*', function(req, res) {

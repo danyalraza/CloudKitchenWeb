@@ -1,0 +1,17 @@
+<div class="jumbotron text-center">
+	<h1>Nerds and Proud</h1>
+</div>
+<div ng-repeat="recipe in recipes" ng-if="$index % 3 == 0" class="row">
+    <div class="col-xs-4 favourite" ng-style="{'background-image':'url({{ recipe.HeroPhotoUrl }})', 'background-repeat':'no-repeat', 'background-size':'cover', 'background-position':'50% 50%'}">
+    	<h1>{{ recipes[$index].Title }}</h1>
+			<button ng-click="deleteItem($index, recipes[$index])"></button>
+    </div>
+    <div class="col-xs-4 favourite" ng-style="{'background-image':'url({{ recipes[$index + 1].HeroPhotoUrl }})', 'background-repeat':'no-repeat', 'background-size':'cover', 'background-position':'50% 50%'}">
+			<h1>{{ recipes[$index + 1].Title }}</h1>
+			<button ng-click="deleteItem($index + 1, recipes[$index + 1])"></button>
+    </div>
+    <div class="col-xs-4 favourite" ng-style="{'background-image':'url({{ recipes[$index + 2].HeroPhotoUrl }})', 'background-repeat':'no-repeat', 'background-size':'cover', 'background-position':'50% 50%'}">
+			<h1>{{ recipes[$index + 2].Title }}</h1>
+			<button ng-click="deleteItem($index + 2, recipes[$index + 2])"></button>
+    </div>
+</div>
