@@ -9,9 +9,13 @@ angular.module('FavouritesCtrl', []).controller('FavouritesController', function
     console.log(response.body);
   });
 
-	function deleteItem(index, object) = {
-		var id index;
-		$http.
+	function deleteItem(recipeID) {
+		console.log("Trying to delete ID " + recipeID);
+		$http.delete('/api/favourites/', roleid, {params: {"recipeID" : recipeID}}).then(function successCallback(response) {
+			console.log(response.data);
+			// $scope.recipes.splice()
+		}, function errorCallback(response) {
+			console.log(response.body);
+		})
 	}
-
 });

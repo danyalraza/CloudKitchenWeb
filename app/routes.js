@@ -53,12 +53,16 @@ var apiKey="1a2pNH4Ed5Yt15zsqR28Q2MUXJt4gG7B";
 		sessionFavourite.push(newObj);
 	});
 
-	app.destroy('/api/favourites', function(request, response) {
+	app.delete('/api/favourites', function(request, response) {
+		console.log("Trying to delete!!!");
+		if (request.body == "") return;
 		var destroyFavourite = new Firebase("https://fiery-heat-3854.firebaseio.com/Favourites/.json?orderBy=%22RecipeID%22&equalTo=" + request.body);
 		destroyFavourite.remove();
+		response.on("error", console.log);
 });
 	// frontend routes =========================================================
 	// route to handle all angular requests
 	app.get('*', function(req, res) {
 		res.sendfile('./public/index.html');
 	});
+};
