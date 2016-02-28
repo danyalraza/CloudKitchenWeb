@@ -1,9 +1,12 @@
 <div class="jumbotron text-center">
 	<h1>Search for a Recipe:</h1>
-
 	<span class="input-group-btn">
-	<button class="btn btn-default" type="button" ng-model="recipeSearch">Go!</button>
-	<input type="text" class="form-control" ng-submit="search(recipeSearch)" placeholder="Search for..." style="'display': 'inline box'">
+		<input type="text" class="form-control" ng-model="recipeSearch" placeholder="Search for..." style="'display': 'inline box'">
+		<button class="btn btn-primary search" type="button" ng-click="search()">Go!</button>
 	</span>
 	</div><!-- /input-group -->
+</div>
+
+<div class="container-fluid" ng-repeat="recipe in recipes">
+	<h1> {{ recipe.RecipeID }} </h1>
 </div>

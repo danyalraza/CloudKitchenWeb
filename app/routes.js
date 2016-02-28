@@ -58,8 +58,7 @@ var apiKey="1a2pNH4Ed5Yt15zsqR28Q2MUXJt4gG7B";
 		if (request.params.id == undefined) return;
 		// var myURL = "https://fiery-heat-3854.firebaseio.com/Favourites/.json?orderBy=%22RecipeID%22&equalTo=" + request.params.id;
 		var destroyFavourite = new Firebase("https://fiery-heat-3854.firebaseio.com/Favourites/");
-		destroyFavourite = destroyFavourite.orderByValue.equalTo(request.params.id).once("value");
-		destroyFavourite.remove();
+
 		response.on("error", console.log(response));
 });
 	// frontend routes =========================================================

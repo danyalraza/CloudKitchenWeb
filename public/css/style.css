@@ -1,7 +1,13 @@
 body { padding-top:30px; }
 
 .favourite {
-  padding-bottom: 50px;
-  padding-left: 10%;
-  padding-right: 10%;
+  margin-bottom: 50px;
+  border-style: solid;
+  border-color: inherit;
+}
+
+.search {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 200px;
 }
