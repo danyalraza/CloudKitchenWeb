@@ -2,9 +2,8 @@
 	<h1>Search for a Recipe:</h1>
 
 	<span class="input-group-btn">
-	<button class="btn btn-default" type="button">Go!</button>
+	<button class="btn btn-default" type="button" ng-model="recipeSearch">Go!</button>
+	<input type="text" class="form-control" ng-submit="search(recipeSearch)" placeholder="Search for..." style="'display': 'inline box'">
 	</span>
-	<input type="text" class="form-control" placeholder="Search for...">
-	
 	</div><!-- /input-group -->
 </div>

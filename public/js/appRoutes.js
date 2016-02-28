@@ -4,19 +4,14 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 
 		// home page
 		.when('/', {
-			templateUrl: 'views/home.html',
-			controller: 'MainController'
+			templateUrl: 'views/search.html',
+			controller: 'SearchController'
 		})
 
 		.when('/favourites', {
 			templateUrl: 'views/favourites.html',
 			controller: 'FavouritesController'
 		})
-
-		.when('/search/:id', {
-			templateUrl: 'views/search.html',
-			controller: 'SearchController'
-		});
 
 	$locationProvider.html5Mode(true);
 
