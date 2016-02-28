@@ -4,8 +4,11 @@
   "description": "This is a repo for a starter appliation for a Single Page MEAN Stack application. Just download and install and you have a good foundation for building application.",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.13.4",
-    "mongoose": "^4.4.5"
+    "body-parser": "~1.4.2",
+    "express": "~4.5.1",
+    "firebase": "^2.4.1",
+    "method-override": "~2.0.2",
+    "mongoose": "~3.8.0"
   },
   "devDependencies": {},
   "scripts": {
