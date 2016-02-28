@@ -1,0 +1,17 @@
+{
+  "name": "kitchenapp",
+  "version": "1.0.0",
+  "description": "This is a repo for a starter appliation for a Single Page MEAN Stack application. Just download and install and you have a good foundation for building application.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
