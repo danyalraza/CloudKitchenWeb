@@ -5,7 +5,7 @@ var http = require('http');
 var session = new Firebase('https://fiery-heat-3854.firebaseio.com/');
 var sessionFavourite = session.child("Favourites");
 
-var apiKey="1a2pNH4Ed5Yt15zsqR28Q2MUXJt4gG7B";
+var apiKey="secret";
 
 	// server routes ===========================================================
 	// handle things like api calls
